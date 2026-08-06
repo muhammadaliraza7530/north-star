@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CheckCircle2, Compass, Gem, Users } from "lucide-react";
+import { Compass, Gem, Users } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { CtaBand } from "@/components/CtaBand";
 import { Counter, Reveal, SectionHeading, SkillBar } from "@/components/ui-bits";
-import { aboutBody, aboutPoints, ceo, skills, stats, whyChooseBody } from "@/lib/site-data";
+import { ceo, skills, stats } from "@/lib/site-data";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -52,40 +52,6 @@ function AboutPage() {
         intro="A leading construction and development company built on craftsmanship, detail and dedication."
         image="/images/ns/project-5.webp"
       />
-
-      <section className="py-14 sm:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
-          <Reveal>
-            <div className="lit-panel overflow-hidden">
-              <img
-                src="/images/ns/project-3.webp"
-                alt="North Star Construction designer villa"
-                loading="lazy"
-                className="h-72 w-full object-cover sm:h-[28rem]"
-              />
-            </div>
-          </Reveal>
-          <div>
-            <SectionHeading eyebrow="Who We Are" title="Excellence is the standard, not the goal" />
-            <Reveal delay={80}>
-              <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                {aboutBody}
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                {whyChooseBody}
-              </p>
-              <ul className="mt-7 space-y-3">
-                {aboutPoints.map((p) => (
-                  <li key={p} className="flex items-center gap-3 text-sm font-medium sm:text-base">
-                    <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" />
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
-        </div>
-      </section>
 
       <section className="relative overflow-hidden border-y border-border bg-card/20 py-14 sm:py-24">
         <div className="pointer-events-none absolute inset-0 grid-backdrop opacity-20" />
