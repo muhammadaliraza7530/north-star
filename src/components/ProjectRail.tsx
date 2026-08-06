@@ -8,7 +8,7 @@ type Project = { title: string; block: string; location: string; image: string }
  */
 export function ProjectRail({
   items,
-  speed = 0.085,
+  speed = 0.24,
 }: {
   items: Project[];
   speed?: number;

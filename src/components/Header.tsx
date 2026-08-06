@@ -49,7 +49,7 @@ export function Header() {
             <span className="font-display text-sm font-bold tracking-[0.16em] text-primary sm:text-base">
               NORTHSTAR
             </span>
-            <span className="mt-1 text-[8px] uppercase tracking-[0.22em] text-muted-foreground sm:text-[9px]">
+            <span className="mt-1 whitespace-nowrap text-[8px] uppercase tracking-[0.20em] text-muted-foreground sm:text-[9px]">
               Construction &amp; Development
             </span>
           </span>

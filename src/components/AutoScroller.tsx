@@ -62,7 +62,7 @@ export function AutoScroller({
     <div
       ref={railRef}
       className={cn(
-        "w-full overflow-x-auto scrollbar-none select-none",
+        "w-full overflow-x-auto scrollbar-none select-none py-3",
         dragging ? "cursor-grabbing" : "cursor-grab",
         className,
       )}

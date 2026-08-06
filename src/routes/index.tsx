@@ -10,7 +10,6 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { AutoScroller } from "@/components/AutoScroller";
-import { AutoVideo } from "@/components/AutoVideo";
 import { CtaBand } from "@/components/CtaBand";
 import { Counter, Reveal, SectionHeading, SkillBar } from "@/components/ui-bits";
 import { ProjectRail } from "@/components/ProjectRail";
@@ -109,7 +108,7 @@ function Hero() {
           </span>
 
           <span
-            className="soft-up mt-4 block text-base font-semibold uppercase tracking-[0.22em] text-foreground/90 sm:text-2xl lg:text-3xl"
+            className="soft-up mt-3 block whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/90 sm:text-lg md:text-xl lg:text-2xl sm:tracking-[0.18em] lg:tracking-[0.22em]"
             style={{ animationDelay: "0.7s" }}
           >
             Construction &amp; Development
@@ -160,14 +159,6 @@ function Hero() {
           ))}
         </div>
       </div>
-    </section>
-  );
-}
-
-function VideoSection() {
-  return (
-    <section className="relative bg-black">
-      <AutoVideo src="/video/showreel.mp4" poster="/video/showreel.webp" />
     </section>
   );
 }
@@ -423,7 +414,7 @@ function ProjectsSection() {
 
       <Reveal>
         <div className="mt-12">
-          <ProjectRail items={projects} />
+          <ProjectRail items={projects} speed={0.24} />
         </div>
       </Reveal>
     </section>
@@ -441,10 +432,9 @@ function SignatureSection() {
           title="Brands & partners we build with"
           align="center"
         />
-
       </div>
-      <div className="mt-10">
-        <AutoScroller innerClassName="gap-4 px-4" speed={0.045}>
+      <div className="my-6 flex w-full items-center justify-center">
+        <AutoScroller className="py-4" innerClassName="gap-4 px-4 items-center justify-center" speed={0.08}>
           {rail.map((logo, i) => (
             <div
               key={`${logo}-${i}`}
@@ -454,7 +444,7 @@ function SignatureSection() {
                 src={logo}
                 alt="Signature project partner"
                 loading="lazy"
-                className="max-h-full max-w-full object-contain opacity-80 transition-opacity hover:opacity-100"
+                className="max-h-12 max-w-[80%] shrink-0 object-contain opacity-80 transition-opacity hover:opacity-100 sm:max-h-14"
               />
             </div>
           ))}
@@ -555,7 +545,6 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <VideoSection />
       <AboutSection />
       <CeoSection />
       <ServicesSection />

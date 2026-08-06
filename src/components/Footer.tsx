@@ -22,7 +22,7 @@ export function Footer() {
                 <span className="font-display text-base font-bold tracking-[0.16em] text-primary">
                   NORTHSTAR
                 </span>
-                <span className="mt-1 text-[9px] uppercase tracking-[0.22em] text-muted-foreground">
+                <span className="mt-1 whitespace-nowrap text-[9px] uppercase tracking-[0.20em] text-muted-foreground">
                   Construction &amp; Development
                 </span>
               </span>

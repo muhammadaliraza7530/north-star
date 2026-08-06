@@ -1,11 +1,20 @@
 import { useEffect, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 /**
- * Full-bleed showreel.
+ * Full-bleed showreel or reel frame.
  * Plays with sound as soon as it enters the viewport, and stops
  * completely (video + audio) as soon as it leaves. No overlay UI.
  */
-export function AutoVideo({ src, poster }: { src: string; poster?: string }) {
+export function AutoVideo({
+  src,
+  poster,
+  className,
+}: {
+  src: string;
+  poster?: string;
+  className?: string;
+}) {
   const ref = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -75,7 +84,9 @@ export function AutoVideo({ src, poster }: { src: string; poster?: string }) {
       muted
       width={608}
       height={1080}
-      className="mx-auto block h-auto max-h-[88vh] w-auto max-w-full object-contain"
+      className={cn(
+        className || "mx-auto block h-auto max-h-[88vh] w-auto max-w-full object-contain",
+      )}
     />
   );
 }

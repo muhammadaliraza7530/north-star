@@ -255,13 +255,13 @@ export const testimonials = [
   {
     quote:
       "The quality, planning, and execution were all top-notch. North Star's attention to detail truly sets them apart from others. We're proud to have chosen them for our dream project.",
-    name: "Col. Faisal",
+    name: "Faisal",
     role: "Client",
   },
   {
     quote:
       "From the first meeting to project completion, everything was smooth. The team was honest, skilled, and always delivered on time. Highly satisfied with the outcome and the overall experience.",
-    name: "Col. Mohi-ul-Din",
+    name: "Mohi-ul-Din",
     role: "Client",
   },
   {

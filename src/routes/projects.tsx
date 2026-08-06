@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { MapPin } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
+import { AutoVideo } from "@/components/AutoVideo";
 import { CtaBand } from "@/components/CtaBand";
 import { Reveal, SectionHeading } from "@/components/ui-bits";
 import { ProjectRail } from "@/components/ProjectRail";
@@ -50,6 +51,20 @@ function ProjectsPage() {
         intro="From 7 marla designer villas to 4 kanal farm houses and commercial developments."
         image="/images/ns/project-11.webp"
       />
+
+      <section className="relative overflow-hidden bg-card/20 py-10 sm:py-16">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+          <div className="relative mx-auto flex w-full max-w-xs items-center justify-center overflow-hidden rounded-3xl border border-primary/30 bg-black shadow-2xl shadow-primary/15 sm:max-w-sm">
+            <div className="aspect-[9/16] h-[520px] w-full sm:h-[600px]">
+              <AutoVideo
+                src="/video/showreel.mp4"
+                poster="/video/showreel.webp"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-12 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -110,7 +125,7 @@ function ProjectsPage() {
           />
         </div>
         <div className="mt-10">
-          <ProjectRail items={projects} speed={0.1} />
+          <ProjectRail items={projects} speed={0.24} />
         </div>
       </section>
 
