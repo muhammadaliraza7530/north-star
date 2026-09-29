@@ -35,9 +35,9 @@ export const heroSlides = [
 ];
 
 export const ceo = {
-  name: "Muhammad Shahzad",
+  name: "Engineer Asif Saeed",
   role: "Founder & Chief Executive Officer",
-  image: "/images/team/ceo.webp",
+  image: "/images/team/IMG_6557.png",
   quote:
     "Every project we sign is a promise. We build it the way we would build our own home — honest materials, honest timelines, honest work.",
   body: "North Star Construction and Development was founded on one simple belief: a building should outlive the people who ordered it. From our first villa in Bahria Town to the commercial and industrial projects we deliver today, that standard has never moved.",
@@ -54,7 +54,6 @@ export const skills = [
   { label: "Problem Solving", value: 100 },
   { label: "On-Time Delivery", value: 100 },
 ];
-
 
 export const aboutPoints = [
   "Expertise & Experience",
@@ -81,16 +80,14 @@ export const services = [
     slug: "residential",
     title: "Residential Construction",
     image: "/images/services/residential.webp",
-    short:
-      "Designer villas, farm houses and family homes built to the highest standard of finish.",
+    short: "Designer villas, farm houses and family homes built to the highest standard of finish.",
     body: "From 5 marla homes to 4 kanal farm houses, we build residences that balance beauty, strength and long-term value. Premium materials, certified steel schedules and senior engineers on site at every stage.",
   },
   {
     slug: "commercial",
     title: "Commercial Construction",
     image: "/images/services/commercial.webp",
-    short:
-      "Offices, plazas and retail spaces delivered on schedule and built for daily use.",
+    short: "Offices, plazas and retail spaces delivered on schedule and built for daily use.",
     body: "Commercial work demands speed without compromise. We plan phasing, procurement and manpower so your space opens on time, meets every by-law and stands up to years of heavy footfall.",
   },
   {
@@ -105,16 +102,14 @@ export const services = [
     slug: "interior",
     title: "Interior Design & Renovation",
     image: "/images/services/interior.webp",
-    short:
-      "Transform an existing space with bespoke interiors, ceilings, joinery and finishes.",
+    short: "Transform an existing space with bespoke interiors, ceilings, joinery and finishes.",
     body: "Whether it is a full house renovation or a single floor refresh, our interior team designs and installs ceilings, wall panelling, kitchens, wardrobes and lighting so the result lands exactly as rendered.",
   },
   {
     slug: "project-management",
     title: "Project Management",
     image: "/images/services/project-management.webp",
-    short:
-      "Transparent scheduling, procurement and quality control on every phase of the build.",
+    short: "Transparent scheduling, procurement and quality control on every phase of the build.",
     body: "Our project managers own the timeline, budget and quality checklist. You receive clear progress reporting, controlled costs and a single point of contact for the entire project.",
   },
 ];
@@ -281,7 +276,4 @@ export const faqs = [
   },
 ];
 
-export const highlights = [
-  "Exceptional Project Management",
-  "Innovative Construction Techniques",
-];
+export const highlights = ["Exceptional Project Management", "Innovative Construction Techniques"];

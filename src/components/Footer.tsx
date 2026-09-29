@@ -84,7 +84,10 @@ export function Footer() {
                   <a href={`tel:${site.phoneTel}`} className="transition-colors hover:text-primary">
                     {site.phone}
                   </a>
-                  <a href={`tel:${site.phone2Tel}`} className="transition-colors hover:text-primary">
+                  <a
+                    href={`tel:${site.phone2Tel}`}
+                    className="transition-colors hover:text-primary"
+                  >
                     {site.phone2}
                   </a>
                 </span>

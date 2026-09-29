@@ -20,7 +20,6 @@ import {
   ceo,
   faqs,
   heroSlides,
-
   highlights,
   projects,
   services,
@@ -81,7 +80,6 @@ function Hero() {
         <div className="absolute inset-0 bg-background/70" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/45 to-background" />
         <div className="absolute inset-0 grid-backdrop opacity-25" />
-
       </div>
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center justify-center px-4 py-10 text-center sm:px-6 sm:py-14 lg:px-8">
@@ -176,6 +174,7 @@ function CeoSection() {
                 src={ceo.image}
                 alt={`${ceo.name} — ${ceo.role}, North Star Construction`}
                 loading="lazy"
+                referrerPolicy="no-referrer"
                 width={1024}
                 height={1408}
                 className="h-full w-full object-cover object-top"
@@ -214,7 +213,6 @@ function CeoSection() {
   );
 }
 
-
 function AboutSection() {
   return (
     <section className="relative py-14 sm:py-24">
@@ -236,9 +234,7 @@ function AboutSection() {
                 <p className="font-display text-sm font-bold leading-snug text-foreground sm:text-base">
                   2 Kanal Signature Designer Villa
                 </p>
-                <p className="mt-1 text-[11px] text-primary sm:text-xs">
-                  Bahria Town Phase 8
-                </p>
+                <p className="mt-1 text-[11px] text-primary sm:text-xs">Bahria Town Phase 8</p>
               </div>
             </div>
             <div className="mt-6 flex flex-col gap-4 sm:mt-8">
@@ -254,9 +250,7 @@ function AboutSection() {
                   <p className="font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
                     1 Kanal Spanish Villa
                   </p>
-                  <p className="mt-0.5 text-[10px] text-primary sm:text-xs">
-                    Overseas V Block
-                  </p>
+                  <p className="mt-0.5 text-[10px] text-primary sm:text-xs">Overseas V Block</p>
                 </div>
               </div>
               <div className="lit-panel flex flex-1 flex-col items-center justify-center bg-card/60 p-4 text-center">
@@ -452,7 +446,11 @@ function SignatureSection() {
         />
       </div>
       <div className="my-6 flex w-full items-center justify-center">
-        <AutoScroller className="py-4" innerClassName="gap-4 px-4 items-center justify-center" speed={0.08}>
+        <AutoScroller
+          className="py-4"
+          innerClassName="gap-4 px-4 items-center justify-center"
+          speed={0.08}
+        >
           {rail.map((logo, i) => (
             <div
               key={`${logo}-${i}`}
@@ -476,11 +474,7 @@ function TestimonialsSection() {
   return (
     <section className="relative py-14 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Testimonials"
-          title="What our clients say"
-          align="center"
-        />
+        <SectionHeading eyebrow="Testimonials" title="What our clients say" align="center" />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 80}>

@@ -6,13 +6,7 @@ type Project = { title: string; block: string; location: string; image: string }
 /**
  * Continuously moving, finger-draggable rail of project cards.
  */
-export function ProjectRail({
-  items,
-  speed = 0.24,
-}: {
-  items: Project[];
-  speed?: number;
-}) {
+export function ProjectRail({ items, speed = 0.24 }: { items: Project[]; speed?: number }) {
   const rail = [...items, ...items];
 
   return (

@@ -90,6 +90,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "North Star Construction and Development" },
       { name: "theme-color", content: "#0d0c0b" },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "North Star Construction and Development" },
+      {
+        property: "og:description",
+        content:
+          "North Star Construction and Development — premium residential, commercial and industrial construction in Islamabad and Rawalpindi.",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

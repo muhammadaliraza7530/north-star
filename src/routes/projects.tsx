@@ -118,18 +118,12 @@ function ProjectsPage() {
 
       <section className="border-t border-border bg-card/20 py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Gallery"
-            title="Swipe through our recent work"
-            align="center"
-          />
+          <SectionHeading eyebrow="Gallery" title="Swipe through our recent work" align="center" />
         </div>
         <div className="mt-10">
           <ProjectRail items={projects} speed={0.24} />
         </div>
       </section>
-
-
 
       <CtaBand />
     </>

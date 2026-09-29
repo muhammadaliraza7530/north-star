@@ -64,6 +64,7 @@ function AboutPage() {
                   src={ceo.image}
                   alt={`${ceo.name} — ${ceo.role}, North Star Construction`}
                   loading="lazy"
+                  referrerPolicy="no-referrer"
                   width={1024}
                   height={1408}
                   className="h-full w-full object-cover object-top"
@@ -90,8 +91,6 @@ function AboutPage() {
           </div>
         </div>
       </section>
-
-
 
       <section className="border-y border-border bg-card/30 py-12 sm:py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-3 gap-4 px-4 sm:px-6 lg:px-8">

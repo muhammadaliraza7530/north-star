@@ -11,7 +11,9 @@ export function GlowLayer() {
     let raf = 0;
 
     const onMove = (e: PointerEvent) => {
-      const target = (e.target as HTMLElement | null)?.closest?.(".lit-panel") as HTMLElement | null;
+      const target = (e.target as HTMLElement | null)?.closest?.(
+        ".lit-panel",
+      ) as HTMLElement | null;
       if (!target) return;
       const r = target.getBoundingClientRect();
       target.style.setProperty("--mx", `${e.clientX - r.left}px`);
