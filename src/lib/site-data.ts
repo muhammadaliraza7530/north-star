@@ -121,16 +121,34 @@ export const services = [
 
 export const projects = [
   {
-    title: "4 Kanal Form House",
+    title: "4 Kanal Farm House",
     block: "A Block",
-    location: "Gulberg Green Islamabad",
+    location: "Gulberg Greens Islamabad",
     image: "/images/ns/project-1.webp",
   },
   {
-    title: "2 Kanal Designer Villa",
+    title: "2 Kanal Signature Designer Villa",
     block: "Bahria Hamlet",
     location: "Bahria Town Rawalpindi Phase 8",
-    image: "/images/ns/project-2.webp",
+    image: "/images/ns/gen-8.webp",
+  },
+  {
+    title: "1 Kanal Modern Villa",
+    block: "F Block",
+    location: "Gulberg Residencia Islamabad",
+    image: "/images/ns/gen-2.webp",
+  },
+  {
+    title: "1 Kanal Spanish House",
+    block: "Overseas V Block",
+    location: "Bahria Town Rawalpindi Phase 8",
+    image: "/images/ns/project-7.webp",
+  },
+  {
+    title: "4 Kanal Luxury Farm House",
+    block: "Executive Block",
+    location: "Gulberg Greens Islamabad",
+    image: "/images/ns/gen-3.webp",
   },
   {
     title: "1 Kanal Designer Villa",
@@ -157,12 +175,6 @@ export const projects = [
     image: "/images/ns/project-6.webp",
   },
   {
-    title: "1 Kanal Spanish House",
-    block: "Overseas V Block",
-    location: "Bahria Town Rawalpindi Phase 8",
-    image: "/images/ns/project-7.webp",
-  },
-  {
     title: "1 Kanal Designer Villa",
     block: "Usman-D Block",
     location: "Bahria Town Rawalpindi Phase 8",
@@ -181,7 +193,7 @@ export const projects = [
     image: "/images/ns/project-10.webp",
   },
   {
-    title: "1 Commercial Project",
+    title: "Commercial Plaza Project",
     block: "E-Commercial",
     location: "Bahria Town Rawalpindi Phase 8",
     image: "/images/ns/project-11.webp",
@@ -199,46 +211,28 @@ export const projects = [
     image: "/images/ns/gen-1.webp",
   },
   {
-    title: "1 Kanal Modern Villa",
-    block: "F Block",
-    location: "Gulberg Residencia Islamabad",
-    image: "/images/ns/gen-2.webp",
-  },
-  {
-    title: "4 Kanal Farm House",
-    block: "Executive Block",
-    location: "Gulberg Greens Islamabad",
-    image: "/images/ns/gen-3.webp",
-  },
-  {
-    title: "7 Marla Designer Villa",
+    title: "7 Marla Contemporary Villa",
     block: "Umer Block",
     location: "Bahria Town Rawalpindi Phase 8",
     image: "/images/ns/gen-4.webp",
   },
   {
-    title: "1 Commercial Project",
+    title: "Corporate Commercial Hub",
     block: "Business District",
     location: "Bahria Town Rawalpindi Phase 8",
     image: "/images/ns/gen-5.webp",
   },
   {
-    title: "2 Kanal Villa Interior",
+    title: "2 Kanal Luxury Villa Interior",
     block: "Bahria Hamlet",
     location: "Bahria Town Rawalpindi Phase 8",
     image: "/images/ns/gen-6.webp",
   },
   {
-    title: "1 Kanal Villa (Grey Structure)",
+    title: "1 Kanal Executive Designer Villa",
     block: "B Block",
     location: "AWT Sangjani D-18 Islamabad",
-    image: "/images/ns/gen-7.webp",
-  },
-  {
-    title: "2 Kanal Designer Villa",
-    block: "Usman-D Block",
-    location: "Bahria Town Rawalpindi Phase 8",
-    image: "/images/ns/gen-8.webp",
+    image: "/images/services/residential.webp",
   },
 ];
 

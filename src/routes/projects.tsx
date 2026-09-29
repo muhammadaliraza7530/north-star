@@ -33,7 +33,7 @@ const filters = ["All", "Villas", "Farm House", "Spanish", "Commercial"] as cons
 
 function matches(title: string, f: (typeof filters)[number]) {
   if (f === "All") return true;
-  if (f === "Villas") return title.includes("Designer Villa");
+  if (f === "Villas") return title.includes("Villa");
   if (f === "Farm House") return title.includes("Form House") || title.includes("Farm House");
   if (f === "Spanish") return title.includes("Spanish");
   return title.includes("Commercial");

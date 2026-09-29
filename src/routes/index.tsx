@@ -61,7 +61,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[92vh] overflow-hidden pt-16 sm:pt-20">
+    <section className="relative overflow-hidden pt-20 pb-8 sm:pt-24 sm:pb-12">
       <div className="absolute inset-0">
         {heroSlides.map((s, i) => (
           <img
@@ -84,7 +84,7 @@ function Hero() {
 
       </div>
 
-      <div className="relative mx-auto flex min-h-[calc(92vh-5rem)] max-w-5xl flex-col items-center justify-center px-4 py-16 text-center sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex max-w-5xl flex-col items-center justify-center px-4 py-10 text-center sm:px-6 sm:py-14 lg:px-8">
         <div className="soft-up inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.24em] text-primary sm:text-xs">
           <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-primary" />
           {site.tagline}
@@ -221,24 +221,45 @@ function AboutSection() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
         <Reveal className="order-2 lg:order-1">
           <div className="grid grid-cols-2 gap-4">
-            <div className="lit-panel overflow-hidden">
+            <div className="lit-panel group relative flex min-h-[18rem] flex-col justify-end overflow-hidden bg-card/60 sm:min-h-[23rem]">
               <img
-                src="/images/ns/project-2.webp"
-                alt="Designer villa built by North Star Construction"
+                src="/images/ns/gen-8.webp"
+                alt="2 Kanal Signature Designer Villa — Bahria Town Rawalpindi Phase 8"
                 loading="lazy"
-                className="h-52 w-full object-cover sm:h-72"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+              <span className="absolute left-3 top-3 rounded-full border border-primary/40 bg-background/80 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.16em] text-primary backdrop-blur sm:left-4 sm:top-4 sm:text-[10px]">
+                Bahria Hamlet
+              </span>
+              <div className="relative p-4 sm:p-5">
+                <p className="font-display text-sm font-bold leading-snug text-foreground sm:text-base">
+                  2 Kanal Signature Designer Villa
+                </p>
+                <p className="mt-1 text-[11px] text-primary sm:text-xs">
+                  Bahria Town Phase 8
+                </p>
+              </div>
             </div>
-            <div className="mt-8 space-y-4">
-              <div className="lit-panel overflow-hidden">
+            <div className="mt-6 flex flex-col gap-4 sm:mt-8">
+              <div className="lit-panel group relative h-44 overflow-hidden bg-card/60 sm:h-52">
                 <img
                   src="/images/ns/project-7.webp"
-                  alt="Spanish style house project"
+                  alt="1 Kanal Spanish Villa — Overseas V Block, Bahria Town"
                   loading="lazy"
-                  className="h-36 w-full object-cover sm:h-48"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-3.5 sm:p-4">
+                  <p className="font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
+                    1 Kanal Spanish Villa
+                  </p>
+                  <p className="mt-0.5 text-[10px] text-primary sm:text-xs">
+                    Overseas V Block
+                  </p>
+                </div>
               </div>
-              <div className="lit-panel bg-card/60 p-4 text-center">
+              <div className="lit-panel flex flex-1 flex-col items-center justify-center bg-card/60 p-4 text-center">
                 <HardHat className="mx-auto h-6 w-6 text-primary" />
                 <p className="mt-2 font-display text-lg font-bold text-primary">Since day one</p>
                 <p className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
@@ -392,7 +413,7 @@ function WhyUsSection() {
 
 function ProjectsSection() {
   return (
-    <section className="relative py-14 sm:py-24">
+    <section className="relative py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
@@ -412,13 +433,10 @@ function ProjectsSection() {
         </div>
       </div>
 
-      <Reveal>
-        <div className="mt-12">
-          <ProjectRail items={projects} speed={0.24} />
-        </div>
-      </Reveal>
+      <div className="mt-8 sm:mt-10">
+        <ProjectRail items={projects} speed={0.24} />
+      </div>
     </section>
-
   );
 }
 
@@ -545,11 +563,11 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <ProjectsSection />
       <AboutSection />
       <CeoSection />
       <ServicesSection />
       <WhyUsSection />
-      <ProjectsSection />
       <SignatureSection />
       <TestimonialsSection />
       <FaqSection />
